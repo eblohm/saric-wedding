@@ -40,10 +40,10 @@ const Header = () => {
           <a href="#bridal-party">the bridal party</a>
         </li>
         <li>
-          <a href="ceremony">the ceremony</a>
+          <a href="#event-details">the ceremony</a>
         </li>
         <li>
-          <a href="#registries">registry</a>
+          <a href="#registry">registry</a>
         </li>
       </OurLinks>
     </header>

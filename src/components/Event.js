@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const LocationSection = styled.section`
   display: grid;
@@ -40,6 +41,11 @@ const Location = props => {
       </div>
     </LocationSection>
   );
+};
+
+Location.PropTypes = {
+  ceremonyTime: PropTypes.string.isRequired,
+  receptionTime: PropTypes.string.isRequired,
 };
 
 export default Location;

@@ -13,8 +13,8 @@ const Details = styled.div`
 `;
 
 const Heading = styled.h2`
-  color: ${props => props.theme.sage};
-  font-size: 3rem;
+  color: ${props => props.theme.white};
+  font-size: 5rem;
   text-align: center;
 `;
 
@@ -23,11 +23,11 @@ const SectionText = styled.div`
   font-size: 1.8rem;
 `;
 
-const Section = props => (
-  <Container id={props.id}>
+const Section = ({ id, heading, children }) => (
+  <Container id={id}>
     <Details>
-      <Heading>{props.heading}</Heading>
-      <SectionText>{props.children}</SectionText>
+      <Heading>{heading}</Heading>
+      <SectionText>{children}</SectionText>
     </Details>
   </Container>
 );

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const BridalStyles = styled.div`
   padding: 1rem;
@@ -12,14 +13,17 @@ const BridalStyles = styled.div`
   }
 `;
 
-const BridalParty = ({ name, part, extraCss, children }) => (
+const BridalParty = ({ name, extraCss, children }) => (
   <BridalStyles className={extraCss}>
     <img src="" alt={name} />
-    <h3>
-      {name} - {part}
-    </h3>
+    <h3>{name}</h3>
     <p>{children}</p>
   </BridalStyles>
 );
+
+BridalParty.PropTypes = {
+  name: PropTypes.string.isRequired,
+  extraCss: PropTypes.string.isRequired,
+};
 
 export default BridalParty;

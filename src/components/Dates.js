@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Countdown from 'react-countdown-now';
 import TimeAgo from 'react-timeago';
 import buildFormatter from 'react-timeago/lib/formatters/buildFormatter';
@@ -34,5 +35,11 @@ const Dates = ({ backgroundImage, date, id }) => (
     )}
   </section>
 );
+
+Dates.PropTypes = {
+  id: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  backgroundImage: PropTypes.string,
+};
 
 export default Dates;
