@@ -1,0 +1,21 @@
+.event {
+  font-size: 2rem;
+  text-align: center;
+
+  &--ceremony,
+  &--reception {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &--heading {
+    color: $color-mauve;
+    font-size: 4rem;
+  }
+
+  &--date,
+  &--time,
+  &--location {
+    font-family: $font-sans-serif;
+  }
+}
