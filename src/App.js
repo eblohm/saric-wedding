@@ -12,6 +12,7 @@ import RegistryLink from './components/RegistryLink';
 import Footer from './components/Footer';
 
 const theme = {
+  black: 'hsl(0, 0%, 0%)',
   maroon: 'hsl(344, 73%, 22%)',
   sage: 'hsl(67, 24%, 28%)',
   mauve: 'hsl(351, 23%, 52%)',
@@ -68,45 +69,88 @@ class App extends React.Component {
             background="sage"
           >
             <BridalPartyStyles>
-              <BridalParty name="Rebecca Barker" extraCss="maid-of-honor">
+              <BridalParty
+                name="Rebecca Barker"
+                extraCss="maid-of-honor"
+                image="rebecca.jpg"
+              >
                 Rebecca Barker
               </BridalParty>
-              <BridalParty name="Kelly Cole" extraCss="bridesmaid">
+              <BridalParty
+                name="Kelly Cole"
+                extraCss="bridesmaid"
+                image="kelly.jpg"
+              >
                 Kelly Cole
               </BridalParty>
-              <BridalParty name="Sarah Mazurkiewicz" extraCss="bridesmaid">
+              <BridalParty
+                name="Sarah Mazurkiewicz"
+                extraCss="bridesmaid"
+                image="http://placehold.it/250x250"
+              >
                 Sarah Mazurkiewicz
               </BridalParty>
-              <BridalParty name="Kelsey Daldine" extraCss="bridesmaid">
+              <BridalParty
+                name="Kelsey Daldine"
+                extraCss="bridesmaid"
+                image="kelsey.jpg"
+              >
                 Kelsey Daldine
               </BridalParty>
-              <BridalParty name="Alex Blohm" extraCss="best-man">
+              <BridalParty
+                name="Alex Blohm"
+                extraCss="best-man"
+                image="http://placehold.it/250x250"
+              >
                 Alex Blohm
               </BridalParty>
-              <BridalParty name="Phil Serraon" extraCss="groomsman" image="phil.jpeg">
+              <BridalParty
+                name="Phil Serraon"
+                extraCss="groomsman"
+                image="phil.jpg"
+              >
                 Phil Serraon
               </BridalParty>
-              <BridalParty name="David Dwyer" extraCss="groomsman">
+              <BridalParty
+                name="David Dwyer"
+                extraCss="groomsman"
+                image="http://placehold.it/250x250"
+              >
                 David Dwyer
               </BridalParty>
-              <BridalParty name="Matt Kaiser" extraCss="groomsman">
+              <BridalParty
+                name="Matt Kaiser"
+                extraCss="groomsman"
+                image="http://placehold.it/250x250"
+              >
                 Matt Kaiser
               </BridalParty>
             </BridalPartyStyles>
           </Section>
           <Event ceremonyTime="5:00 PM" receptionTime="6:00 PM" />
           <Section id="registry" heading="registries" background="mauve">
+            <p>
+              Thank you for considering sending us a gift! We are registered at
+              the following places, or if you'd like to help contribute to our
+              honeymoon, you can donate with the PayPal link.
+            </p>
             <RegistryLink
               link="https://www.bedbathandbeyond.com/store/giftregistry/viewregistryguest/547469406"
               companyName="Bed Bath & Beyond"
               logo="bbb.jpg"
             />
+            <RegistryLink link="#" companyName="Amazon" logo="amazon.png" />
+            <RegistryLink
+              link="https://paypal.me/pools/c/8hZIXhCqdQ"
+              companyName="PayPal Honeymoon Fund"
+              logo="paypal.png"
+            />
           </Section>
-          <Dates
+          {/* <Dates
             backgroundImage="none"
             date="October 10, 2010 00:00:00 GMT-04:00"
             id="beginning"
-          />
+          /> */}
           <Footer />
         </>
       </ThemeProvider>

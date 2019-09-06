@@ -11,6 +11,15 @@ const BridalStyles = styled.div`
     background-color: ${props => props.theme.mauve};
     border-radius: 5px;
   }
+
+  h3 {
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  img {
+    max-width: 250px;
+  }
 `;
 
 const BridalParty = ({ name, extraCss, children, image }) => (
@@ -24,7 +33,7 @@ const BridalParty = ({ name, extraCss, children, image }) => (
 BridalParty.propTypes = {
   name: PropTypes.string.isRequired,
   extraCss: PropTypes.string.isRequired,
-  image: PropTypes.string
+  image: PropTypes.string,
 };
 
 export default BridalParty;

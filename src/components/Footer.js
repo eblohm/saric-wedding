@@ -1,9 +1,10 @@
 import React from 'react';
 
 export default function Footer() {
+  const date = new Date().getFullYear();
   return (
     <footer style={{ textAlign: 'center' }}>
-      <p>&copy; 2019 Eric Blohm</p>
+      <p>&copy; {date} Eric Blohm</p>
     </footer>
   );
 }

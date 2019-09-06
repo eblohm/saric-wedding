@@ -34,7 +34,7 @@ const OurStoryText = styled.div`
 const OurStory = () => (
   <OurStoryContainer>
     <OurStoryImage>
-      <img src="us-3.jpg" alt="Sarah and Eric" />
+      <img src="us.jpg" alt="Sarah and Eric" />
     </OurStoryImage>
     <OurStoryText>
       <h2>Our Story</h2>

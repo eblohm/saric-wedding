@@ -8,7 +8,7 @@ const Image = styled.img`
 `;
 
 const RegistryLink = ({ link, logo, companyName }) => (
-  <a href={link} class="registry-link">
+  <a href={link} className="registry-link">
     <Image src={logo} alt={companyName} />
   </a>
 );

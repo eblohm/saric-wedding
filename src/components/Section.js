@@ -9,18 +9,23 @@ const Container = styled.section`
 
 const Details = styled.div`
   margin: 0 auto;
-  width: 90.6rem;
+  width: 120rem;
 `;
 
 const Heading = styled.h2`
   color: ${props => props.theme.white};
   font-size: 5rem;
+  margin-top: 0;
   text-align: center;
 `;
 
 const SectionText = styled.div`
   font-family: ${props => props.theme.sansSerif};
   font-size: 1.8rem;
+
+  p {
+    color: ${props => props.theme.white};
+  }
 `;
 
 const Section = ({ id, heading, children }) => (
