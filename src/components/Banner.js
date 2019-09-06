@@ -33,7 +33,7 @@ const BannerText = styled.div`
 `;
 
 const Banner = () => (
-  <BannerStyles>
+  <BannerStyles id="banner">
     <Header />
     <BannerText>
       <h1>Sarah and Eric are getting married!</h1>

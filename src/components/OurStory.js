@@ -32,7 +32,7 @@ const OurStoryText = styled.div`
 `;
 
 const OurStory = () => (
-  <OurStoryContainer>
+  <OurStoryContainer id="our-story">
     <OurStoryImage>
       <img src="us.jpg" alt="Sarah and Eric" />
     </OurStoryImage>
