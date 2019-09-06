@@ -13,17 +13,18 @@ const BridalStyles = styled.div`
   }
 `;
 
-const BridalParty = ({ name, extraCss, children }) => (
+const BridalParty = ({ name, extraCss, children, image }) => (
   <BridalStyles className={extraCss}>
-    <img src="" alt={name} />
+    <img src={image} alt={name} />
     <h3>{name}</h3>
     <p>{children}</p>
   </BridalStyles>
 );
 
-BridalParty.PropTypes = {
+BridalParty.propTypes = {
   name: PropTypes.string.isRequired,
   extraCss: PropTypes.string.isRequired,
+  image: PropTypes.string
 };
 
 export default BridalParty;

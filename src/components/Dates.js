@@ -36,7 +36,7 @@ const Dates = ({ backgroundImage, date, id }) => (
   </section>
 );
 
-Dates.PropTypes = {
+Dates.propTypes = {
   id: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
   backgroundImage: PropTypes.string,

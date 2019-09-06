@@ -13,7 +13,7 @@ const RegistryLink = ({ link, logo, companyName }) => (
   </a>
 );
 
-RegistryLink.PropTypes = {
+RegistryLink.propTypes = {
   link: PropTypes.string.isRequired,
   logo: PropTypes.string.isRequired,
   companyName: PropTypes.string.isRequired,

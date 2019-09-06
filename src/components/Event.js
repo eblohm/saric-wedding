@@ -43,7 +43,7 @@ const Location = props => {
   );
 };
 
-Location.PropTypes = {
+Location.propTypes = {
   ceremonyTime: PropTypes.string.isRequired,
   receptionTime: PropTypes.string.isRequired,
 };

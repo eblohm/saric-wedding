@@ -32,7 +32,8 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     line-height: 1.5;
-    margin: 0;
+    margin: 0 auto;
+    max-width: 1920px;
     padding: 0;
   }
 
@@ -82,7 +83,7 @@ class App extends React.Component {
               <BridalParty name="Alex Blohm" extraCss="best-man">
                 Alex Blohm
               </BridalParty>
-              <BridalParty name="Phil Serraon" extraCss="groomsman">
+              <BridalParty name="Phil Serraon" extraCss="groomsman" image="phil.jpeg">
                 Phil Serraon
               </BridalParty>
               <BridalParty name="David Dwyer" extraCss="groomsman">
