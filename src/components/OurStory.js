@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Heart from './Heart';
 
 const OurStoryContainer = styled.section`
   display: grid;
@@ -7,7 +8,9 @@ const OurStoryContainer = styled.section`
 `;
 
 const OurStoryImage = styled.div`
+  align-items: center;
   display: flex;
+  justify-content: center;
 
   img {
     max-width: 100%;
@@ -28,6 +31,10 @@ const OurStoryText = styled.div`
   p {
     font-family: ${props => props.theme.sansSerif};
     font-size: 2rem;
+  }
+
+  iframe {
+    align-self: center;
   }
 `;
 
@@ -52,21 +59,14 @@ const OurStory = () => (
         nullam. Euismod elementum nisi quis eleifend quam. Eu volutpat odio
         facilisis mauris sit amet.
       </p>
-      <p>
-        Amet purus gravida quis blandit turpis cursus. Dictum sit amet justo
-        donec enim diam. Faucibus nisl tincidunt eget nullam non. Est
-        pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat.
-        Rhoncus mattis rhoncus urna neque viverra justo nec. Turpis in eu mi
-        bibendum neque egestas congue quisque. Urna nunc id cursus metus aliquam
-        eleifend mi. Sit amet volutpat consequat mauris nunc. Gravida neque
-        convallis a cras semper. Sit amet cursus sit amet. Consequat interdum
-        varius sit amet mattis vulputate enim nulla. Aliquet nibh praesent
-        tristique magna sit amet purus gravida. Lectus urna duis convallis
-        convallis tellus id interdum. Volutpat maecenas volutpat blandit aliquam
-        etiam erat velit scelerisque. Commodo quis imperdiet massa tincidunt
-        nunc pulvinar sapien et. Aliquet nec ullamcorper sit amet. Tincidunt
-        praesent semper feugiat nibh. Nullam non nisi est sit amet.
-      </p>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/6DnxufingB4"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
     </OurStoryText>
   </OurStoryContainer>
 );

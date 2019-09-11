@@ -86,7 +86,7 @@ class App extends React.Component {
               <BridalParty
                 name="Sarah Mazurkiewicz"
                 extraCss="bridesmaid"
-                image="http://placehold.it/250x250"
+                image="sarah.jpg"
               >
                 Sarah Mazurkiewicz
               </BridalParty>
@@ -105,6 +105,13 @@ class App extends React.Component {
                 Alex Blohm
               </BridalParty>
               <BridalParty
+                name="David Dwyer"
+                extraCss="groomsman"
+                image="david.jpg"
+              >
+                David Dwyer
+              </BridalParty>
+              <BridalParty
                 name="Phil Serraon"
                 extraCss="groomsman"
                 image="phil.jpg"
@@ -112,22 +119,15 @@ class App extends React.Component {
                 Phil Serraon
               </BridalParty>
               <BridalParty
-                name="David Dwyer"
-                extraCss="groomsman"
-                image="http://placehold.it/250x250"
-              >
-                David Dwyer
-              </BridalParty>
-              <BridalParty
                 name="Matt Kaiser"
                 extraCss="groomsman"
-                image="http://placehold.it/250x250"
+                image="matt.jpg"
               >
                 Matt Kaiser
               </BridalParty>
             </BridalPartyStyles>
           </Section>
-          <Event ceremonyTime="5:00 PM" receptionTime="6:00 PM" />
+          <Event ceremonyTime="5:30 PM" receptionTime="6:30 PM" />
           <Section id="registry" heading="registries" background="mauve">
             <p>
               Thank you for considering sending us a gift! We are registered at
