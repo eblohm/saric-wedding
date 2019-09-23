@@ -100,7 +100,7 @@ class App extends React.Component {
               <BridalParty
                 name="Alex Blohm"
                 extraCss="best-man"
-                image="http://placehold.it/250x250"
+                image="alex.jpg"
               >
                 Alex Blohm
               </BridalParty>
