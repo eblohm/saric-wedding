@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Heart from './Heart';
 
 const OurStoryContainer = styled.section`
   display: grid;
@@ -83,6 +82,7 @@ const OurStory = () => (
         frameBorder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
+        title="The Proposal Video"
       ></iframe>
     </OurStoryText>
   </OurStoryContainer>

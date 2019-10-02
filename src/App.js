@@ -48,6 +48,10 @@ const BridalPartyStyles = styled.div`
   grid-gap: 1.6rem;
   grid-template-columns: repeat(1, 1fr);
 
+  @media screen and (min-width: 770px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   @media screen and (min-width: 1200px) {
     grid-template-columns: repeat(4, 1fr);
   }

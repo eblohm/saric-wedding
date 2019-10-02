@@ -11,6 +11,14 @@ const Details = styled.div`
   margin: 0 auto;
   width: 31rem;
 
+  @media screen and (min-width: 480px) {
+    width: 47rem;
+  }
+
+  @media screen and (min-width: 770px) {
+    width: 76rem;
+  }
+
   @media screen and (min-width: 1200px) {
     width: 119rem;
   }

@@ -5,6 +5,10 @@ import PropTypes from 'prop-types';
 const LocationSection = styled.section`
   display: grid;
 
+  @media screen and (min-width: 770px) {
+    grid-template-columns: 30% 40% 30%;
+  }
+
   @media screen and (min-width: 1200px) {
     grid-template-columns: 1fr 3fr 1fr;
   }
