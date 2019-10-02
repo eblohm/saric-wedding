@@ -4,7 +4,10 @@ import Heart from './Heart';
 
 const OurStoryContainer = styled.section`
   display: grid;
-  grid-template-columns: 35% 1fr;
+
+  @media screen and (min-width: 1200px) {
+    grid-template-columns: 35% 1fr;
+  }
 `;
 
 const OurStoryImage = styled.div`
@@ -21,20 +24,34 @@ const OurStoryText = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 2rem 5rem;
+  padding: 1rem;
+
+  @media screen and (min-width: 1200px) {
+    padding: 2rem 5rem;
+  }
 
   h2 {
     font-size: 5rem;
     margin: 0;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
   }
 
   p {
     font-family: ${props => props.theme.sansSerif};
-    font-size: 2rem;
+    font-size: 1.6rem;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 2rem;
+    }
   }
 
   iframe {
     align-self: center;
+    max-width: 100%;
   }
 `;
 
@@ -63,9 +80,9 @@ const OurStory = () => (
         width="560"
         height="315"
         src="https://www.youtube.com/embed/6DnxufingB4"
-        frameborder="0"
+        frameBorder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
+        allowFullScreen
       ></iframe>
     </OurStoryText>
   </OurStoryContainer>

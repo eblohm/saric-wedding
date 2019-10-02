@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const AboutStyles = styled.section`
   background-color: ${props => props.theme.mauve};
   display: flex;
+  flex-direction: column;
   justify-content: center;
 
   h3 {
@@ -18,11 +19,20 @@ const AboutStyles = styled.section`
 `;
 
 const OurStyles = styled.div`
-  width: 75%;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    width: 75%;
+  }
 
   &:first-child {
-    margin-right: 2.5rem;
-    text-align: right;
+    margin: 1.5rem;
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 2.5rem;
+      text-align: right;
+    }
 
     p {
       margin-left: auto;
@@ -31,7 +41,11 @@ const OurStyles = styled.div`
   }
 
   &:last-child {
-    margin-left: 2.5rem;
+    margin: 1.5rem;
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 2.5rem;
+    }
 
     p {
       margin-left: 0;
@@ -40,7 +54,9 @@ const OurStyles = styled.div`
   }
 
   p {
-    width: 75%;
+    @media screen and (min-width: 1200px) {
+      width: 75%;
+    }
   }
 `;
 

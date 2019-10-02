@@ -9,7 +9,11 @@ const Container = styled.section`
 
 const Details = styled.div`
   margin: 0 auto;
-  width: 120rem;
+  width: 31rem;
+
+  @media screen and (min-width: 1200px) {
+    width: 119rem;
+  }
 `;
 
 const Heading = styled.h2`
@@ -21,7 +25,11 @@ const Heading = styled.h2`
 
 const SectionText = styled.div`
   font-family: ${props => props.theme.sansSerif};
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 1.8rem;
+  }
 
   p {
     color: ${props => props.theme.white};

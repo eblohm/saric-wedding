@@ -4,20 +4,28 @@ import styled from 'styled-components';
 const OurName = styled.div`
   color: ${props => props.theme.mauve};
   font-family: ${props => props.theme.script};
-  font-size: 7rem;
+  font-size: 5.5rem;
   font-weight: 700;
   text-align: center;
   text-transform: lowercase;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 7rem;
+  }
 `;
 
 const OurLinks = styled.nav`
-  display: flex;
+  display: none;
   font-family: ${props => props.theme.sansSerif};
   font-size: 1.8rem;
   font-weight: 700;
   justify-content: center;
   list-style: none;
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 
   a {
     color: ${props => props.theme.maroon};

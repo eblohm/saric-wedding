@@ -23,12 +23,20 @@ const BannerText = styled.div`
 
   h1 {
     font-family: ${props => props.theme.sansSerif};
-    font-size: 5rem;
+    font-size: 3rem;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 5rem;
+    }
   }
 
   h2 {
     font-family: ${props => props.theme.sansSerif};
-    font-size: 3.5rem;
+    font-size: 2rem;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 3.5rem;
+    }
   }
 `;
 

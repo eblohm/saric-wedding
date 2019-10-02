@@ -4,7 +4,10 @@ import PropTypes from 'prop-types';
 
 const LocationSection = styled.section`
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+
+  @media screen and (min-width: 1200px) {
+    grid-template-columns: 1fr 3fr 1fr;
+  }
 `;
 
 const Location = props => {

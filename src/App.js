@@ -46,7 +46,11 @@ const GlobalStyle = createGlobalStyle`
 const BridalPartyStyles = styled.div`
   display: grid;
   grid-gap: 1.6rem;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+
+  @media screen and (min-width: 1200px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 `;
 
 class App extends React.Component {
@@ -134,11 +138,6 @@ class App extends React.Component {
               the following places, or if you'd like to help contribute to our
               honeymoon, you can donate with the PayPal link.
             </p>
-            <RegistryLink
-              link="https://www.bedbathandbeyond.com/store/giftregistry/viewregistryguest/547469406"
-              companyName="Bed Bath & Beyond"
-              logo="bbb.jpg"
-            />
             <RegistryLink link="#" companyName="Amazon" logo="amazon.png" />
             <RegistryLink
               link="https://paypal.me/pools/c/8hZIXhCqdQ"
