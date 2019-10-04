@@ -4,6 +4,10 @@ import styled from 'styled-components';
 const OurStoryContainer = styled.section`
   display: grid;
 
+  @media screen and (min-width: 770px) {
+    grid-template-columns: 45% 1fr;
+  }
+
   @media screen and (min-width: 1200px) {
     grid-template-columns: 35% 1fr;
   }
@@ -12,7 +16,12 @@ const OurStoryContainer = styled.section`
 const OurStoryImage = styled.div`
   align-items: center;
   display: flex;
+  grid-row-start: 2;
   justify-content: center;
+
+  @media screen and (min-width: 770px) {
+    grid-row-start: 1;
+  }
 
   img {
     max-width: 100%;
@@ -44,7 +53,7 @@ const OurStoryText = styled.div`
     font-size: 1.6rem;
 
     @media screen and (min-width: 1200px) {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
   }
 
@@ -62,18 +71,19 @@ const OurStory = () => (
     <OurStoryText>
       <h2>our story</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Id ornare arcu odio
-        ut sem nulla pharetra diam sit. Vitae suscipit tellus mauris a diam.
-        Vitae congue eu consequat ac felis. Diam vel quam elementum pulvinar
-        etiam non quam lacus suspendisse. Id diam vel quam elementum pulvinar.
-        Elit eget gravida cum sociis natoque penatibus et magnis. Vitae
-        elementum curabitur vitae nunc sed velit dignissim sodales. Id cursus
-        metus aliquam eleifend mi in. Ut sem nulla pharetra diam sit amet nisl
-        suscipit adipiscing. Arcu felis bibendum ut tristique et egestas. Nisl
-        purus in mollis nunc sed id. Libero id faucibus nisl tincidunt eget
-        nullam. Euismod elementum nisi quis eleifend quam. Eu volutpat odio
-        facilisis mauris sit amet.
+        Sarah and Eric started talking at the end of their junior year of high
+        school, when they both took the ACT in the same room together on Eric's
+        birthday. Sarah wished him a happy birthday on Facebook after and
+        brought up the two of them being in the same room, and the relationship
+        grew from there. They went to homecoming and prom together, and both
+        went off to college at Michigan State. After graduating, Sarah took a
+        position with the Disney College Program and moved down to Florida while
+        Eric finished up school. After her semester with the DCP was finished,
+        Sarah moved back to Michigan and took a job in Kalamazoo, and Eric had
+        moved home to Warren. Eric would drive out to Kalamazoo most weekends
+        until Sarah moved home and they were finally together again. After years
+        of waiting (9!), Sarah dropped a very subtle hint to Eric by sending him
+        a link to a WNIC contest to win an engagement ring...
       </p>
       <iframe
         width="560"

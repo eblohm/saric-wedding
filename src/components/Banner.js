@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Header from './Header';
 
 const BannerStyles = styled.section`
-  background-image: url('http://placehold.it/1920x1920');
+  background-image: url('banner-full.jpg');
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -20,6 +20,12 @@ const BannerText = styled.div`
   top: 60%;
   transform: translateX(-50%);
   width: 100%;
+
+  h1,
+  h2 {
+    color: ${props => props.theme.white};
+    text-shadow: 0 0 10px ${props => props.theme.black};
+  }
 
   h1 {
     font-family: ${props => props.theme.serif};

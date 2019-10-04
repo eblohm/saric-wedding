@@ -14,7 +14,7 @@ const BridalStyles = styled.div`
 
   h3 {
     font-size: 3rem;
-    margin: 0;
+    margin: 0.5rem 0 0 0;
   }
 
   img {
@@ -26,7 +26,6 @@ const BridalParty = ({ name, extraCss, children, image }) => (
   <BridalStyles className={extraCss}>
     <img src={image} alt={name} />
     <h3>{name}</h3>
-    <p>{children}</p>
   </BridalStyles>
 );
 

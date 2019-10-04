@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-scroll';
 
 const OurName = styled.div`
   color: ${props => props.theme.mauve};
@@ -11,6 +12,8 @@ const OurName = styled.div`
 
   @media screen and (min-width: 1200px) {
     font-size: 7rem;
+    padding-top: 1.5rem;
+    text-shadow: 0 0 10px ${props => props.theme.white};
   }
 `;
 
@@ -30,6 +33,7 @@ const OurLinks = styled.nav`
 
   a {
     color: ${props => props.theme.maroon};
+    cursor: pointer;
   }
 
   li:not(:last-child) {
@@ -43,16 +47,24 @@ const Header = () => {
       <OurName>The Saric Wedding</OurName>
       <OurLinks>
         <li>
-          <a href="#our-story">our story</a>
+          <Link smooth={true} to="our-story">
+            our story
+          </Link>
         </li>
         <li>
-          <a href="#bridal-party">the bridal party</a>
+          <Link smooth={true} to="bridal-party">
+            the bridal party
+          </Link>
         </li>
         <li>
-          <a href="#event-details">the ceremony</a>
+          <Link smooth={true} to="event-details">
+            the ceremony
+          </Link>
         </li>
         <li>
-          <a href="#registry">registry</a>
+          <Link smooth={true} to="registry">
+            registry
+          </Link>
         </li>
       </OurLinks>
     </header>
