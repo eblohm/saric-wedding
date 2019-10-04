@@ -64,41 +64,15 @@ const OurStyles = styled.div`
   }
 `;
 
-const AboutUs = props => (
+const AboutUs = () => (
   <AboutStyles id="about-us">
     <OurStyles>
       <h3>sarah barker</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Id ornare arcu odio
-        ut sem nulla pharetra diam sit. Vitae suscipit tellus mauris a diam.
-        Vitae congue eu consequat ac felis. Diam vel quam elementum pulvinar
-        etiam non quam lacus suspendisse. Id diam vel quam elementum pulvinar.
-        Elit eget gravida cum sociis natoque penatibus et magnis. Vitae
-        elementum curabitur vitae nunc sed velit dignissim sodales. Id cursus
-        metus aliquam eleifend mi in. Ut sem nulla pharetra diam sit amet nisl
-        suscipit adipiscing. Arcu felis bibendum ut tristique et egestas. Nisl
-        purus in mollis nunc sed id. Libero id faucibus nisl tincidunt eget
-        nullam. Euismod elementum nisi quis eleifend quam. Eu volutpat odio
-        facilisis mauris sit amet.
-      </p>
+      <p></p>
     </OurStyles>
     <OurStyles>
       <h3>eric blohm</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Id ornare arcu odio
-        ut sem nulla pharetra diam sit. Vitae suscipit tellus mauris a diam.
-        Vitae congue eu consequat ac felis. Diam vel quam elementum pulvinar
-        etiam non quam lacus suspendisse. Id diam vel quam elementum pulvinar.
-        Elit eget gravida cum sociis natoque penatibus et magnis. Vitae
-        elementum curabitur vitae nunc sed velit dignissim sodales. Id cursus
-        metus aliquam eleifend mi in. Ut sem nulla pharetra diam sit amet nisl
-        suscipit adipiscing. Arcu felis bibendum ut tristique et egestas. Nisl
-        purus in mollis nunc sed id. Libero id faucibus nisl tincidunt eget
-        nullam. Euismod elementum nisi quis eleifend quam. Eu volutpat odio
-        facilisis mauris sit amet.
-      </p>
+      <p></p>
     </OurStyles>
   </AboutStyles>
 );
