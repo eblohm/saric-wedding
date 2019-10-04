@@ -7,6 +7,10 @@ const AboutStyles = styled.section`
   flex-direction: column;
   justify-content: center;
 
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+
   h3 {
     font-size: 3.6rem;
     margin: 1rem 0;
@@ -63,7 +67,7 @@ const OurStyles = styled.div`
 const AboutUs = props => (
   <AboutStyles id="about-us">
     <OurStyles>
-      <h3>Sarah Barker</h3>
+      <h3>sarah barker</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Id ornare arcu odio
@@ -80,7 +84,7 @@ const AboutUs = props => (
       </p>
     </OurStyles>
     <OurStyles>
-      <h3>Eric Blohm</h3>
+      <h3>eric blohm</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Id ornare arcu odio

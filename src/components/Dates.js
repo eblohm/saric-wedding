@@ -3,6 +3,13 @@ import PropTypes from 'prop-types';
 import Countdown from 'react-countdown-now';
 import TimeAgo from 'react-timeago';
 import buildFormatter from 'react-timeago/lib/formatters/buildFormatter';
+import styled from 'styled-components';
+
+const DateStyles = styled.section`
+  p {
+    font-family: ${props => props.theme.script};
+  }
+`;
 
 const renderer = ({ days, hours, minutes, seconds, completed }) => {
   if (completed) {
@@ -21,19 +28,19 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
 const formatter = buildFormatter(1, 'year', 'ago');
 
 const Dates = ({ backgroundImage, date, id }) => (
-  <section id={id} className="date-counter">
+  <DateStyles id={id} className="date-counter">
     {id === 'forever' ? (
       <div>
-        <p>Forever starts in...</p>
+        <p>forever starts in...</p>
         <Countdown date={date} renderer={renderer} />
       </div>
     ) : (
       <div>
-        <p>It all began...</p>
+        <p>it all began...</p>
         <TimeAgo date={date} formatter={formatter} />
       </div>
     )}
-  </section>
+  </DateStyles>
 );
 
 Dates.propTypes = {

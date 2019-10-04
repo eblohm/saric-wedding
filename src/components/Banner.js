@@ -22,11 +22,11 @@ const BannerText = styled.div`
   width: 100%;
 
   h1 {
-    font-family: ${props => props.theme.sansSerif};
+    font-family: ${props => props.theme.serif};
     font-size: 3rem;
 
     @media screen and (min-width: 1200px) {
-      font-size: 5rem;
+      font-size: 6rem;
     }
   }
 
@@ -44,7 +44,7 @@ const Banner = () => (
   <BannerStyles id="banner">
     <Header />
     <BannerText>
-      <h1>Sarah and Eric are getting married!</h1>
+      <h1>sarah and eric are getting married!</h1>
       <h2>September 6, 2020 in Rochester Hills, MI</h2>
     </BannerText>
   </BannerStyles>

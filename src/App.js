@@ -17,11 +17,18 @@ const theme = {
   sage: 'hsl(67, 24%, 28%)',
   mauve: 'hsl(351, 23%, 52%)',
   white: 'hsl(0, 0%, 100%)',
-  script: '"Great Vibes", sans-serif',
+  script: '"SugarScript", sans-serif',
   sansSerif: '"Montserrat", sans-serif',
 };
 
 const GlobalStyle = createGlobalStyle`
+  @font-face {
+    font-family: 'SugarScript';
+    src: url('/SugarScript-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
   html {
     box-sizing: border-box;
     font-size: 10px;
@@ -40,6 +47,16 @@ const GlobalStyle = createGlobalStyle`
 
   a {
     text-decoration: none;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: ${props => props.theme.script};
+    font-weight: 400;
   }
 `;
 
@@ -78,60 +95,60 @@ class App extends React.Component {
           >
             <BridalPartyStyles>
               <BridalParty
-                name="Rebecca Barker"
+                name="rebecca barker"
                 extraCss="maid-of-honor"
                 image="rebecca.jpg"
               >
-                Rebecca Barker
+                rebecca barker
               </BridalParty>
               <BridalParty
-                name="Kelly Cole"
+                name="kelly cole"
                 extraCss="bridesmaid"
                 image="kelly.jpg"
               >
-                Kelly Cole
+                kelly cole
               </BridalParty>
               <BridalParty
-                name="Sarah Mazurkiewicz"
+                name="sarah mazurkiewicz"
                 extraCss="bridesmaid"
                 image="sarah.jpg"
               >
-                Sarah Mazurkiewicz
+                sarah mazurkiewicz
               </BridalParty>
               <BridalParty
-                name="Kelsey Daldine"
+                name="kelsey daldine"
                 extraCss="bridesmaid"
                 image="kelsey.jpg"
               >
-                Kelsey Daldine
+                kelsey daldine
               </BridalParty>
               <BridalParty
-                name="Alex Blohm"
+                name="alex blohm"
                 extraCss="best-man"
                 image="alex.jpg"
               >
-                Alex Blohm
+                alex blohm
               </BridalParty>
               <BridalParty
-                name="David Dwyer"
+                name="david dwyer"
                 extraCss="groomsman"
                 image="david.jpg"
               >
-                David Dwyer
+                david dwyer
               </BridalParty>
               <BridalParty
-                name="Phil Serraon"
+                name="phil serraon"
                 extraCss="groomsman"
                 image="phil.jpg"
               >
-                Phil Serraon
+                phil serraon
               </BridalParty>
               <BridalParty
-                name="Matt Kaiser"
+                name="matt kaiser"
                 extraCss="groomsman"
                 image="matt.jpg"
               >
-                Matt Kaiser
+                matt kaiser
               </BridalParty>
             </BridalPartyStyles>
           </Section>

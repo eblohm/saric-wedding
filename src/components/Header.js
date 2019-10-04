@@ -5,7 +5,7 @@ const OurName = styled.div`
   color: ${props => props.theme.mauve};
   font-family: ${props => props.theme.script};
   font-size: 5.5rem;
-  font-weight: 700;
+  font-weight: 400;
   text-align: center;
   text-transform: lowercase;
 
@@ -22,6 +22,7 @@ const OurLinks = styled.nav`
   justify-content: center;
   list-style: none;
   text-align: center;
+  text-transform: uppercase;
 
   @media screen and (min-width: 1200px) {
     display: flex;

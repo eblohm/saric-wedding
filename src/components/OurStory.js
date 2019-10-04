@@ -60,7 +60,7 @@ const OurStory = () => (
       <img src="us.jpg" alt="Sarah and Eric" />
     </OurStoryImage>
     <OurStoryText>
-      <h2>Our Story</h2>
+      <h2>our story</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Id ornare arcu odio

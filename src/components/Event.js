@@ -12,15 +12,21 @@ const LocationSection = styled.section`
   @media screen and (min-width: 1200px) {
     grid-template-columns: 1fr 3fr 1fr;
   }
+
+  .event--date,
+  .event--time,
+  .event--location {
+    text-transform: uppercase;
+  }
 `;
 
 const Location = props => {
   return (
     <LocationSection id="event-details" className="event">
       <div className="event--ceremony">
-        <h3 className="event--heading">Ceremony</h3>
-        <p className="event--date">September 06, 2020</p>
-        <p className="event--time">Time: {props.ceremonyTime}</p>
+        <h3 className="event--heading">ceremony</h3>
+        <p className="event--date">september 06, 2020</p>
+        <p className="event--time">time: {props.ceremonyTime}</p>
         <p className="event--location">
           900 W Avon Rd
           <br />
@@ -37,9 +43,9 @@ const Location = props => {
         title="Event Location"
       />
       <div className="event--reception">
-        <h3 className="event--heading">Reception</h3>
-        <p className="event--date">September 06, 2020</p>
-        <p className="event--time">Time: {props.receptionTime}</p>
+        <h3 className="event--heading">reception</h3>
+        <p className="event--date">september 06, 2020</p>
+        <p className="event--time">time: {props.receptionTime}</p>
         <p className="event--location">
           900 W Avon Rd
           <br />
