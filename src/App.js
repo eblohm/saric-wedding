@@ -4,7 +4,7 @@ import './styles/styles.scss';
 import Banner from './components/Banner';
 import OurStory from './components/OurStory';
 import Section from './components/Section';
-import AboutUs from './components/AboutUs';
+// import AboutUs from './components/AboutUs';
 import Dates from './components/Dates';
 import BridalParty from './components/BridalParty';
 import Event from './components/Event';
@@ -82,7 +82,7 @@ class App extends React.Component {
           <GlobalStyle />
           <Banner />
           <OurStory />
-          <AboutUs />
+          {/* <AboutUs /> */}
           <Dates
             backgroundImage="https://via.placeholder.com/150"
             date="September 06, 2020 16:00:00 GMT-04:00"

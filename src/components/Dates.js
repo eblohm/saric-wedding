@@ -6,7 +6,10 @@ import buildFormatter from 'react-timeago/lib/formatters/buildFormatter';
 import styled from 'styled-components';
 
 const DateStyles = styled.section`
+  background-color: ${props => props.theme.mauve};
+
   p {
+    color: ${props => props.theme.white};
     font-family: ${props => props.theme.script};
   }
 `;

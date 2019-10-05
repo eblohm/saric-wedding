@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Link } from 'react-scroll';
 
 const OurName = styled.div`
-  color: ${props => props.theme.mauve};
+  color: ${props => props.theme.white};
   font-family: ${props => props.theme.script};
   font-size: 5.5rem;
   font-weight: 400;
@@ -13,7 +13,7 @@ const OurName = styled.div`
   @media screen and (min-width: 1200px) {
     font-size: 7rem;
     padding-top: 1.5rem;
-    text-shadow: 0 0 10px ${props => props.theme.white};
+    text-shadow: 0 0 16px ${props => props.theme.black};
   }
 `;
 
@@ -32,8 +32,9 @@ const OurLinks = styled.nav`
   }
 
   a {
-    color: ${props => props.theme.maroon};
+    color: ${props => props.theme.white};
     cursor: pointer;
+    text-shadow: 0 0 16px ${props => props.theme.black}
   }
 
   li:not(:last-child) {

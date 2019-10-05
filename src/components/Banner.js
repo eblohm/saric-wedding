@@ -24,7 +24,7 @@ const BannerText = styled.div`
   h1,
   h2 {
     color: ${props => props.theme.white};
-    text-shadow: 0 0 10px ${props => props.theme.black};
+    text-shadow: 0 0 16px ${props => props.theme.black};
   }
 
   h1 {
