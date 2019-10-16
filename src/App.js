@@ -159,7 +159,8 @@ class App extends React.Component {
               the following places, or if you'd like to help contribute to our
               honeymoon, you can donate with the PayPal link.
             </p>
-            <RegistryLink link="#" companyName="Amazon" logo="amazon.png" />
+            <RegistryLink link="https://www.amazon.com/wedding/eric-blohm-sarah-barker-rochester-hills-september-2020/registry/1AWJ2LYQQ2I1G
+" companyName="Amazon" logo="amazon.png" />
             <RegistryLink
               link="https://paypal.me/pools/c/8hZIXhCqdQ"
               companyName="PayPal Honeymoon Fund"
