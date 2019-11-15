@@ -18,7 +18,7 @@
     display: inline-block;
   }
 
-  &:nth-of-type(1) {
+  &:not(:last-child) {
     @media screen and (min-width: 770px) {
       margin-right: 2rem;
     }

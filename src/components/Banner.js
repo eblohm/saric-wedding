@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Header from './Header';
 
 const BannerStyles = styled.section`
-  background-image: url('banner-full.jpg');
+  background-image: url('banner.jpg');
   background-position: center;
   background-size: cover;
   height: 100vh;

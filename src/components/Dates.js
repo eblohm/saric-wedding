@@ -30,7 +30,7 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
 
 const formatter = buildFormatter(1, 'year', 'ago');
 
-const Dates = ({ backgroundImage, date, id }) => (
+const Dates = ({ date, id }) => (
   <DateStyles id={id} className="date-counter">
     {id === 'forever' ? (
       <div>

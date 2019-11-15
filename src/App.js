@@ -82,12 +82,7 @@ class App extends React.Component {
           <GlobalStyle />
           <Banner />
           <OurStory />
-          {/* <AboutUs /> */}
-          <Dates
-            backgroundImage="https://via.placeholder.com/150"
-            date="September 06, 2020 16:00:00 GMT-04:00"
-            id="forever"
-          />
+          <Dates date="September 06, 2020 16:00:00 GMT-04:00" id="forever" />
           <Section
             id="bridal-party"
             heading="the bridal party"
@@ -159,12 +154,21 @@ class App extends React.Component {
               the following places, or if you'd like to help contribute to our
               honeymoon, you can donate with the PayPal link.
             </p>
-            <RegistryLink link="https://www.amazon.com/wedding/eric-blohm-sarah-barker-rochester-hills-september-2020/registry/1AWJ2LYQQ2I1G
-" companyName="Amazon" logo="amazon.png" />
+            <RegistryLink
+              link="https://www.amazon.com/wedding/eric-blohm-sarah-barker-rochester-hills-september-2020/registry/1AWJ2LYQQ2I1G
+"
+              companyName="Amazon"
+              logo="amazon.png"
+            />
             <RegistryLink
               link="https://paypal.me/pools/c/8hZIXhCqdQ"
               companyName="PayPal Honeymoon Fund"
               logo="paypal.png"
+            />
+            <RegistryLink
+              link="tgt.gifts/Sarah+Eric"
+              companyName="Target"
+              logo="target.png"
             />
           </Section>
           {/* <Dates
