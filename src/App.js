@@ -166,7 +166,7 @@ class App extends React.Component {
               logo="paypal.png"
             />
             <RegistryLink
-              link="tgt.gifts/Sarah+Eric"
+              link="https://www.target.com/git-registry/gift/Sarah+Eric"
               companyName="Target"
               logo="target.png"
             />
