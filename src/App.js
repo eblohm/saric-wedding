@@ -17,14 +17,14 @@ const theme = {
   sage: 'hsl(67, 24%, 28%)',
   mauve: 'hsl(351, 23%, 52%)',
   white: 'hsl(0, 0%, 100%)',
-  script: '"SugarScript", sans-serif',
+  script: '"Sunberry", sans-serif',
   sansSerif: '"Montserrat", sans-serif',
 };
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
-    font-family: 'SugarScript';
-    src: url('/SugarScript-Regular.woff2') format('woff2');
+    font-family: 'Sunberry';
+    src: url('/Sunberry.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
   }

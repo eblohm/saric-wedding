@@ -71,19 +71,30 @@ const OurStory = () => (
     <OurStoryText>
       <h2>our story</h2>
       <p>
-        Sarah and Eric started talking at the end of their junior year of high
-        school, when they both took the ACT in the same room together on Eric's
-        birthday. Sarah wished him a happy birthday on Facebook after and
-        brought up the two of them being in the same room, and the relationship
-        grew from there. They went to homecoming and prom together, and both
-        went off to college at Michigan State. After graduating, Sarah took a
-        position with the Disney College Program and moved down to Florida while
-        Eric finished up school. After her semester with the DCP was finished,
-        Sarah moved back to Michigan and took a job in Kalamazoo, and Eric had
-        moved home to Warren. Eric would drive out to Kalamazoo most weekends
-        until Sarah moved home and they were finally together again. After years
-        of waiting (9!), Sarah dropped a very subtle hint to Eric by sending him
-        a link to a WNIC contest to win an engagement ring...
+        Sarah and Eric crossed paths occasionally throughout their high school
+        days but officially started talking at the end of junior year when they
+        shared the same room to take the ACT. It also happened to be Eric’s
+        birthday so Sarah wished Eric a “Happy Birthday” on Facebook and joked
+        about how much fun it must have been to spend your birthday taking the
+        ACT. Their relationship grew after they started texting each other
+        non-stop. After months of being friends they decided to go to senior
+        year homecoming. About a week later they decided to make their
+        relationship official. Their first date was at MJR when they saw “The
+        Last Exorcism”. The two went to their senior prom together that year and
+        both decided to apply to Michigan State University where they spent the
+        next four years together. Sophomore year is when they decided to take
+        the next step in their relationship and live together. Two apartments,
+        lots of beefaroni, Pita Pit delivery and a whole bunch of mountain dew
+        later Sarah was ready for graduation. After graduation, Sarah decided to
+        take a position with Disney and do the Disney College program while Eric
+        finished up his last semester of college. After Sarah’s semester with
+        Disney she decided she was ready to get back to Michigan, Sarah moved
+        back to Michigan and took a job in Kalamazoo, and Eric had moved home to
+        Warren. Eric would drive out to Kalamazoo most weekends until Sarah
+        decided to move back to the east side of the state where they would
+        finally be close again. After almost a decade together, Sarah dropped a
+        very subtle hint to Eric by sending him a link to a 100.3 WNIC contest
+        to win an engagement ring…
       </p>
       <iframe
         width="560"
