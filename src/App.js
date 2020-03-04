@@ -1,24 +1,24 @@
-import React from 'react';
-import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
-import './styles/styles.scss';
-import Banner from './components/Banner';
-import OurStory from './components/OurStory';
-import Section from './components/Section';
+import React from "react";
+import styled, { ThemeProvider, createGlobalStyle } from "styled-components";
+import "./styles/styles.scss";
+import Banner from "./components/Banner";
+import OurStory from "./components/OurStory";
+import Section from "./components/Section";
 // import AboutUs from './components/AboutUs';
-import Dates from './components/Dates';
-import BridalParty from './components/BridalParty';
-import Event from './components/Event';
-import RegistryLink from './components/RegistryLink';
-import Footer from './components/Footer';
+import Dates from "./components/Dates";
+import BridalParty from "./components/BridalParty";
+import Event from "./components/Event";
+import RegistryLink from "./components/RegistryLink";
+import Footer from "./components/Footer";
 
 const theme = {
-  black: 'hsl(0, 0%, 0%)',
-  maroon: 'hsl(344, 73%, 22%)',
-  sage: 'hsl(67, 24%, 28%)',
-  mauve: 'hsl(351, 23%, 52%)',
-  white: 'hsl(0, 0%, 100%)',
+  black: "hsl(0, 0%, 0%)",
+  maroon: "hsl(344, 73%, 22%)",
+  sage: "hsl(67, 24%, 28%)",
+  mauve: "hsl(351, 23%, 52%)",
+  white: "hsl(0, 0%, 100%)",
   script: '"Sunberry", sans-serif',
-  sansSerif: '"Montserrat", sans-serif',
+  sansSerif: '"Montserrat", sans-serif'
 };
 
 const GlobalStyle = createGlobalStyle`
@@ -166,7 +166,7 @@ class App extends React.Component {
               logo="paypal.png"
             />
             <RegistryLink
-              link="https://www.target.com/git-registry/gift/Sarah+Eric"
+              link="https://www.target.com/gift-registry/gift/Sarah+Eric"
               companyName="Target"
               logo="target.png"
             />
