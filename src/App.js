@@ -1,24 +1,24 @@
-import React from "react";
-import styled, { ThemeProvider, createGlobalStyle } from "styled-components";
-import "./styles/styles.scss";
-import Banner from "./components/Banner";
-import OurStory from "./components/OurStory";
-import Section from "./components/Section";
+import React from 'react';
+import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
+import './styles/styles.scss';
+import Banner from './components/Banner';
+import OurStory from './components/OurStory';
+import Section from './components/Section';
 // import AboutUs from './components/AboutUs';
-import Dates from "./components/Dates";
-import BridalParty from "./components/BridalParty";
-import Event from "./components/Event";
-import RegistryLink from "./components/RegistryLink";
-import Footer from "./components/Footer";
+import Dates from './components/Dates';
+import BridalParty from './components/BridalParty';
+import Event from './components/Event';
+import RegistryLink from './components/RegistryLink';
+import Footer from './components/Footer';
 
 const theme = {
-  black: "hsl(0, 0%, 0%)",
-  maroon: "hsl(344, 73%, 22%)",
-  sage: "hsl(67, 24%, 28%)",
-  mauve: "hsl(351, 23%, 52%)",
-  white: "hsl(0, 0%, 100%)",
+  black: 'hsl(0, 0%, 0%)',
+  maroon: 'hsl(344, 73%, 22%)',
+  sage: 'hsl(67, 24%, 28%)',
+  mauve: 'hsl(351, 23%, 52%)',
+  white: 'hsl(0, 0%, 100%)',
   script: '"Sunberry", sans-serif',
-  sansSerif: '"Montserrat", sans-serif'
+  sansSerif: '"Montserrat", sans-serif',
 };
 
 const GlobalStyle = createGlobalStyle`
@@ -55,7 +55,7 @@ const GlobalStyle = createGlobalStyle`
   h4,
   h5,
   h6 {
-    font-family: ${props => props.theme.script};
+    font-family: ${(props) => props.theme.script};
     font-weight: 400;
   }
 `;
@@ -82,93 +82,98 @@ class App extends React.Component {
           <GlobalStyle />
           <Banner />
           <OurStory />
-          <Dates date="September 06, 2020 16:00:00 GMT-04:00" id="forever" />
+          <Dates date='September 06, 2020 16:00:00 GMT-04:00' id='forever' />
           <Section
-            id="bridal-party"
-            heading="the bridal party"
-            background="sage"
+            id='bridal-party'
+            heading='the bridal party'
+            background='sage'
           >
             <BridalPartyStyles>
               <BridalParty
-                name="rebecca barker"
-                extraCss="maid-of-honor"
-                image="rebecca.jpg"
+                name='rebecca barker'
+                extraCss='maid-of-honor'
+                image='rebecca.jpg'
               >
                 rebecca barker
               </BridalParty>
               <BridalParty
-                name="kelly cole"
-                extraCss="bridesmaid"
-                image="kelly.jpg"
+                name='kelly cole'
+                extraCss='bridesmaid'
+                image='kelly.jpg'
               >
                 kelly cole
               </BridalParty>
               <BridalParty
-                name="sarah mazurkiewicz"
-                extraCss="bridesmaid"
-                image="sarah.jpg"
+                name='sarah mazurkiewicz'
+                extraCss='bridesmaid'
+                image='sarah.jpg'
               >
                 sarah mazurkiewicz
               </BridalParty>
               <BridalParty
-                name="kelsey daldine"
-                extraCss="bridesmaid"
-                image="kelsey.jpg"
+                name='kelsey daldine'
+                extraCss='bridesmaid'
+                image='kelsey.jpg'
               >
                 kelsey daldine
               </BridalParty>
               <BridalParty
-                name="alex blohm"
-                extraCss="best-man"
-                image="alex.jpg"
+                name='alex blohm'
+                extraCss='best-man'
+                image='alex.jpg'
               >
                 alex blohm
               </BridalParty>
               <BridalParty
-                name="david dwyer"
-                extraCss="groomsman"
-                image="david.jpg"
+                name='david dwyer'
+                extraCss='groomsman'
+                image='david.jpg'
               >
                 david dwyer
               </BridalParty>
               <BridalParty
-                name="phil serraon"
-                extraCss="groomsman"
-                image="phil.jpg"
+                name='phil serraon'
+                extraCss='groomsman'
+                image='phil.jpg'
               >
                 phil serraon
               </BridalParty>
               <BridalParty
-                name="matt kaiser"
-                extraCss="groomsman"
-                image="matt.jpg"
+                name='matt kaiser'
+                extraCss='groomsman'
+                image='matt.jpg'
               >
                 matt kaiser
               </BridalParty>
             </BridalPartyStyles>
           </Section>
-          <Event ceremonyTime="5:30 PM" receptionTime="6:30 PM" />
-          <Section id="registry" heading="registries" background="mauve">
+          <Event ceremonyTime='5:30 PM' receptionTime='6:30 PM' />
+          <Section id='registry' heading='registries' background='mauve'>
             <p>
               Thank you for considering sending us a gift! We are registered at
               the following places, or if you'd like to help contribute to our
               honeymoon, you can donate with the PayPal link.
             </p>
             <RegistryLink
-              link="https://www.amazon.com/wedding/eric-blohm-sarah-barker-rochester-hills-september-2020/registry/1AWJ2LYQQ2I1G
-"
-              companyName="Amazon"
-              logo="amazon.png"
+              link='https://www.amazon.com/wedding/eric-blohm-sarah-barker-rochester-hills-september-2020/registry/1AWJ2LYQQ2I1G
+'
+              companyName='Amazon'
+              logo='amazon.png'
             />
             <RegistryLink
-              link="https://paypal.me/pools/c/8hZIXhCqdQ"
-              companyName="PayPal Honeymoon Fund"
-              logo="paypal.png"
+              link='https://paypal.me/pools/c/8hZIXhCqdQ'
+              companyName='PayPal Honeymoon Fund'
+              logo='paypal.png'
             />
             <RegistryLink
-              link="https://www.target.com/gift-registry/gift/Sarah+Eric"
-              companyName="Target"
-              logo="target.png"
+              link='https://www.target.com/gift-registry/gift/Sarah+Eric'
+              companyName='Target'
+              logo='target.png'
+            />
+            <RegistryLink
+              link='https://www.wayfair.com/registry/wedding/SarahAndEric09.06.2020'
+              companyName='Wayfair'
+              logo='wayfair.png'
             />
           </Section>
           {/* <Dates
