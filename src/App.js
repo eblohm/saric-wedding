@@ -6,6 +6,7 @@ import OurStory from './components/OurStory';
 import Section from './components/Section';
 // import AboutUs from './components/AboutUs';
 import Dates from './components/Dates';
+import PandemicUpdate from './components/PandemicUdpate';
 import BridalParty from './components/BridalParty';
 import Event from './components/Event';
 import RegistryLink from './components/RegistryLink';
@@ -81,6 +82,7 @@ class App extends React.Component {
         <>
           <GlobalStyle />
           <Banner />
+          <PandemicUpdate />
           <OurStory />
           <Dates date='September 06, 2020 16:00:00 GMT-04:00' id='forever' />
           <Section
@@ -125,13 +127,6 @@ class App extends React.Component {
                 alex blohm
               </BridalParty>
               <BridalParty
-                name='david dwyer'
-                extraCss='groomsman'
-                image='david.jpg'
-              >
-                david dwyer
-              </BridalParty>
-              <BridalParty
                 name='phil serraon'
                 extraCss='groomsman'
                 image='phil.jpg'
@@ -139,11 +134,18 @@ class App extends React.Component {
                 phil serraon
               </BridalParty>
               <BridalParty
-                name='matt kaiser'
+                name='david dwyer'
                 extraCss='groomsman'
-                image='matt.jpg'
+                image='david.jpg'
               >
-                matt kaiser
+                david dwyer
+              </BridalParty>
+              <BridalParty
+                name='kyle belanger'
+                extraCss='groomsman'
+                image='kyle.jpg'
+              >
+                kyle belanger
               </BridalParty>
             </BridalPartyStyles>
           </Section>
