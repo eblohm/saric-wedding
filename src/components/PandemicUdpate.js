@@ -21,6 +21,10 @@ const PandemicStyles = styled.section`
       font-size: 1.8rem;
     }
   }
+
+  ul {
+    list-style-type: none;
+  }
 `;
 
 const PandemicUdpate = () => {
